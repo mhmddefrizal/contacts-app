@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiHome, FiPlusCircle } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
@@ -6,10 +7,14 @@ function Navigation() {
     <nav className="navigation">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <FiHome />
+          </Link>
         </li>
         <li>
-          <Link to="/add">Add</Link>
+          <Link to="/add">
+            <FiPlusCircle />
+          </Link>
         </li>
       </ul>
     </nav>
